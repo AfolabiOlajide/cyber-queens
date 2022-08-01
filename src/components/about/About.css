@@ -1,0 +1,156 @@
+#about {
+	padding: 4rem 0;
+	display: grid;
+	grid-template-columns: 60% 40%;
+}
+
+.showcase-container {
+	width: 80%;
+	height: 100%;
+	border-radius: 1rem;
+	margin: 0 auto;
+	animation: background-color-change 30s cubic-bezier(0.15, 0.72, 0.96, 0.62) infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0  3rem rgba(144, 95, 61, 0.5);
+}
+
+.showcase-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.showcase-item img{
+    width: 70%;
+    border-radius: 1rem;
+}
+
+.swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about p {
+	margin: 1rem 0;
+}
+
+
+
+@keyframes background-color-change {
+	0% {
+		background-image: linear-gradient(
+			to right bottom,
+			#d9415d,
+			#e44554,
+			#ee4c49,
+			#f6543c,
+			#fb5f2d,
+			#f35c23,
+			#eb5919,
+			#e3560b,
+			#cd440a,
+			#b83109,
+			#a21d07,
+			#8c0303
+		);
+	}
+	25% {
+		background-image: linear-gradient(
+			to right bottom,
+			#f0aa48,
+			#efa43e,
+			#ef9f33,
+			#ee9928,
+			#ee931b,
+			#e98e14,
+			#e5880a,
+			#e08300,
+			#d67d00,
+			#cd7800,
+			#c37200,
+			#ba6d00
+		);
+	}
+	50% {
+		background-image: linear-gradient(
+			to right bottom,
+			#f24405,
+			#f25400,
+			#f26100,
+			#f26e00,
+			#f27900,
+			#f27a00,
+			#f27c01,
+			#f27d01,
+			#f27500,
+			#f26d01,
+			#f26502,
+			#f25c05
+		);
+	}
+	75% {
+		background-image: linear-gradient(
+			to right bottom,
+			#d93d04,
+			#de4d01,
+			#e45b00,
+			#e86900,
+			#ed7600,
+			#e77202,
+			#e06e04,
+			#da6a05,
+			#c75405,
+			#b43f05,
+			#a02905,
+			#8c0e03
+		);
+	}
+	100% {
+		background-image: linear-gradient(
+			to right bottom,
+			#cc5200,
+			#d55600,
+			#df5a00,
+			#e85e00,
+			#f26200,
+			#f6680b,
+			#fb6d14,
+			#ff731c,
+			#ff7c2a,
+			#ff8436,
+			#ff8c42,
+			#ff944d
+		);
+	}
+}
+
+
+@media screen and (max-width: 986px) {
+	#about {
+		grid-template-columns: 100%;
+	}
+
+	.showcase-container {
+		padding: 2rem;
+	}
+}
+
+@media screen and (max-width: 786px) {
+	#about p {
+		font-size: .7rem;
+	}
+
+	.showcase-item img{
+		width: 80%;
+		border-radius: 1rem;
+	}
+
+	.showcase-container {
+		width: 100%;
+		padding: 5rem 0;
+	}
+}

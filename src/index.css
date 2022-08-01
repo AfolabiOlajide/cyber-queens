@@ -1,13 +1,62 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=Uchen&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root{
+    --main-color: #F28705;
+    --bg-color: #0D0D0D;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.App{
+    min-height: 100vh;
+    /* background: #0A090D; */
+    background: var(--bg-color);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Uchen', cursive;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.btn{
+    background: #ffffff;
+    color: var(--main-color);
+    border: none;
+    outline: none;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    /* font-weight: bold; */
+    transition: 500ms all ease;
+}
+
+.btn:hover{
+    background: var(--main-color);
+    color: white;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+@media screen and (max-width: 786px) {
+    .btn{
+        padding: .8rem 1rem;
+        font-size: .8rem;
+    }
 }
