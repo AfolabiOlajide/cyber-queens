@@ -12,6 +12,8 @@ function App() {
   const [accounts, setAccounts] = useState([]);
   const [isConnected, setIsConnected] = useState(false);
 
+  const isConnect = Boolean(accounts[0]);
+
   useEffect(() => {
     // Setup Listeners on Metamast event changes
     if (window.ethereum) {
@@ -60,8 +62,8 @@ function App() {
     <div className="App">
       <Nav accounts={accounts} setAccounts={setAccounts} setIsConnected={setIsConnected} />
       <Hero />
+      { isConnect && <Mint />}
       <About />
-      <Mint />
     </div>
   );
 }
