@@ -21,8 +21,7 @@ const About = () => {
 				<h1>ABOUT</h1>
 				<p>
 					Cyber Queens is a collection of 20,000 randomly generated
-					NFT art pieces created by an African artist Esther
-					Akinboade.
+					NFT art pieces created by an African artist Esther.
 				</p>
 				<p>
 					The collection was inspired by the ‘Peasant to Palace’ story

@@ -156,8 +156,8 @@ const Nav = ({ accounts, setAccounts, setIsConnected }) => {
 				<div className="nav-cta">
 					{isConnect ? (
 						<button className="btn" onClick={switchWallets}>
-							{accounts[0].split("", 4)}...
-							{accounts[0].split("", 6)}
+							{accounts[0].split("").slice(0,4)}...
+							{accounts[0].split("").slice(-6)}
 						</button>
 					) : (
 						<button onClick={connect} className="btn">

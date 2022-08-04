@@ -62,7 +62,7 @@ function App() {
     <div className="App">
       <Nav accounts={accounts} setAccounts={setAccounts} setIsConnected={setIsConnected} />
       <Hero />
-      { isConnect && <Mint />}
+      { isConnect && <Mint accounts={accounts} />}
       <About />
     </div>
   );
